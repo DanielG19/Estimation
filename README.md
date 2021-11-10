@@ -1,5 +1,6 @@
 # Estimation
-1.- Determine standar deviation for GPS X and Accelerometer X
+1.- Determine standar deviation for GPS X and Accelerometer X.
+
 Watching how number where changing and getting the first 100 numbers and appliying the formula ((measure - mean)*2/100)*(1/2),
 Then giving a little more of space for the result, resulting in the next numbers:
 
