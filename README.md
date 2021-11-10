@@ -50,3 +50,18 @@ Dead Reckoning is suceptible to drift, therefore a quaterninon approach is done 
 
 # Flight Evaluation
 
+1.- Meet the performance criteria of each step.
+
+All performance criteria has been completed.
+
+![image](https://user-images.githubusercontent.com/29236973/141101324-d87b7c40-ee9b-4756-8315-5e38b2f34201.png)
+
+------------------------------------------------------------------------------------------------------------
+
+2.- Use own controller.
+
+Already working with own controller.
+
+![image](https://user-images.githubusercontent.com/29236973/141101437-b8a2abe3-5384-4b58-9979-c55e516f3228.png)
+
+
