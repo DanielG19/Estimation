@@ -8,7 +8,7 @@ Then giving a little more of space for the result, resulting in the next numbers
 
 2.- Implement a rate gyro attitude integration shceme in UpdateFromIMU().
 
-Dead Reckoning is suceptible to drift, therefore a quaterninan approach is done by using the "IntegratedBodyRate" to get the estimation from time(i) to time (j)
+Dead Reckoning is suceptible to drift, therefore a quaterninon approach is done by using the "IntegratedBodyRate" to get the estimation from time(i) to time (j)
 
 ![image](https://user-images.githubusercontent.com/29236973/141078023-4e70dcab-1ec0-446a-ad14-1e2ebabd82a2.png)
 
@@ -20,6 +20,21 @@ Dead Reckoning is suceptible to drift, therefore a quaterninan approach is done 
 
 -GetRbgPrime(): this part is done by using the formula on "Estimation for Quadrators" document.
 
-![image](https://user-images.githubusercontent.com/29236973/141085098-253cc945-5a4d-408a-9c6f-400b950e450e.png)
+![image](https://user-images.githubusercontent.com/29236973/141085915-326fbab4-9cdb-4f96-9235-7f192e2b7b5e.png)
+
+-Predict(): Here we already have the mean. thus, we only need the covariance, and following the same formulas from de document, we can get the jacobian. also we alredy have the covariance in time(i-1). thus:
+
+![image](https://user-images.githubusercontent.com/29236973/141088716-88c72f94-9d58-4f74-adca-c2091a8af8fd.png)
+
+4.- Implement the Magnetometer Update.
+
+-UpdateFromMag(): get measurement and current estimated, in order to get the difference, and also we normalize from -180 to 180.
+
+![image](https://user-images.githubusercontent.com/29236973/141097414-c6bcb802-5fd3-46c2-9579-7f7dde4bf55d.png)
+
+5.- Implement GPS update:
+
+-UpdateFromGPS(): 
+
 
 
