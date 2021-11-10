@@ -1,4 +1,4 @@
-# Estimation
+# Implement Estimator
 1.- Determine standar deviation for GPS X and Accelerometer X.
 
 Watching how number where changing and getting the first 100 numbers and appliying the formula ((measure - mean)*2/100)*(1/2),
@@ -44,7 +44,9 @@ Dead Reckoning is suceptible to drift, therefore a quaterninon approach is done 
 
 5.- Implement GPS update:
 
--UpdateFromGPS(): 
+-UpdateFromGPS(): Finally this function is gotten from the same document. but basicalli: "Then the partial derivative is the identity matrix, augmented with a vector of zeros"
 
+![image](https://user-images.githubusercontent.com/29236973/141099819-cd4c31ea-2734-436c-ab1d-7b68dffd5d2e.png)
 
+# Flight Evaluation
 
