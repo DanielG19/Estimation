@@ -6,6 +6,8 @@ Then giving a little more of space for the result, resulting in the next numbers
 
 ![image](https://user-images.githubusercontent.com/29236973/141076284-5263583e-787d-4c23-a40f-8048af0bc22e.png)
 
+------------------------------------------------------------------------------------------------------------
+
 2.- Implement a rate gyro attitude integration shceme in UpdateFromIMU().
 
 Dead Reckoning is suceptible to drift, therefore a quaterninon approach is done by using the "IntegratedBodyRate" to get the estimation from time(i) to time (j)
