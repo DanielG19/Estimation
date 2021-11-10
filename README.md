@@ -14,6 +14,9 @@ Dead Reckoning is suceptible to drift, therefore a quaterninon approach is done 
 
 ![image](https://user-images.githubusercontent.com/29236973/141078023-4e70dcab-1ec0-446a-ad14-1e2ebabd82a2.png)
 
+------------------------------------------------------------------------------------------------------------
+
+
 3.- Implement all of the elements of the prediction step for the estimator.
 
 -PredictState(): the idea is to multiply the rates for the time diference, but before doing that, it is needed to add -9.81 to z direction, because accelerometers mesure free falling as 0, and hover as 9.81.
@@ -28,11 +31,16 @@ Dead Reckoning is suceptible to drift, therefore a quaterninon approach is done 
 
 ![image](https://user-images.githubusercontent.com/29236973/141088716-88c72f94-9d58-4f74-adca-c2091a8af8fd.png)
 
+------------------------------------------------------------------------------------------------------------
+
+
 4.- Implement the Magnetometer Update.
 
 -UpdateFromMag(): get measurement and current estimated, in order to get the difference, and also we normalize from -180 to 180.
 
 ![image](https://user-images.githubusercontent.com/29236973/141097414-c6bcb802-5fd3-46c2-9579-7f7dde4bf55d.png)
+
+------------------------------------------------------------------------------------------------------------
 
 5.- Implement GPS update:
 
